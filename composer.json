@@ -1,0 +1,40 @@
+{
+	"name": "joonas1234/laravel-trustly-client",
+	"description": "Implementation of communications with Trustly public API for Online bank e-payments. See https://trustly.com for more information",
+	"type": "library",
+    "homepage": "https://github.com/joonas1234/laravel-trustly-client",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Joonas Kämäräinen",
+            "email": "joonas@ninjami.com",
+            "homepage": "https://ninjami.com",
+            "role": "Developer"
+        }
+    ],
+	"keywords": [
+		"payment",
+        "trustly",
+        "laravel"
+	],
+	"require": {
+		"ext-json": "*",
+		"ext-bcmath": "*",
+		"ext-openssl": "*",
+		"ext-curl": "*",
+		"ext-mbstring": "*",
+		"php": ">=5.2.0"
+	},
+    "autoload": {
+        "psr-4": {
+            "Joonas1234\\LaravelTrustlyClient\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Joonas1234\\LaravelTrustlyClient\\TrustlyClientServiceProvider"
+            ]
+        }
+    }
+}
